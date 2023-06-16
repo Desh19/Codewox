@@ -1,8 +1,9 @@
 .navbar{
     z-index: 9999;
     height: 60px;
+    position: fixed;
     background-color: #e50047;
-    width:"100%" 
+    width: 100% ;
 }
 
 .rightsideArea{
