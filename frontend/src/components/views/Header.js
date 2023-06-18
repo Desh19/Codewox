@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div>
-        <nav className="navbar-expand-lg navbar ">
+        <nav className="navbar-expand-lg navbarHeader">
             <div className="container-fluid">
                
                 <div className="navbar-collapse listArea " id="navbarSupportedContent">

@@ -1,5 +1,72 @@
 .homeArea{
     width: 77%;
-    margin-left: 22%;
+    margin-left: 21%;
     margin-top: 5%;
 }
+
+ /* ---------------Carousel Area ------------------ */
+
+.carousel-area{
+    height: 300px;
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .carousel-area img{
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .carousel-item{
+    width:870px;
+  }
+
+  .carousel-inner{
+    width:870px;
+  }
+
+  /* ---------------Carousel Area ------------------ */
+
+  .upperArea{
+    display: flex;
+  }
+
+/* ---------------Delivery Pincode Area ------------------ */
+
+  .card{
+    margin-left: 10px;
+    height: 354px;
+  }
+
+  .card img{
+    height: 130px;
+    width:50%;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+
+  .card-title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .card-text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  /* ---------------Delivery Pincode Area ------------------ */
+
+/* ---------------Option Bar------------- */
+
+  .optionBar{
+    width: 870px;
+    height: 50px;
+    margin-top: -52px;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  /* ---------------Option Bar------------- */

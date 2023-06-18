@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
        
-                <footer class="bg-light text-center text-lg-start mt-5" style= {{ width: "78%", marginLeft:"22%" }}>
+                <footer class="bg-light text-center text-lg-start mt-5" style= {{ width: "78%", marginLeft:"21%" }}>
          
             <div class="container p-5">
        
