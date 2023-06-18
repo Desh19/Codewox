@@ -6,10 +6,32 @@ import Image1 from '../images/Image1.jpg';
 import Image2 from '../images/Image2.jpg';
 import Image3 from '../images/Image3.jpg';
 import Location from '../images/location.png';
+import arrow from '../images/arrow.png';
+import product1 from '../images/product1.jpg';
+import product2 from '../images/product2.jpg';
+import product3 from '../images/product3.jpg';
+import product4 from '../images/product4.jpg';
+import product5 from '../images/product5.jpg';
 import SideBar from '../views/SideBar';
 
-
 const HomePage = () => {
+
+  const productContainers = [...document.querySelectorAll('.product-container')];
+  const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+  const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+  productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
 
   return (
     <div>
@@ -83,7 +105,101 @@ const HomePage = () => {
 
       {/* ---------------Option Bar------------- */} 
 
-      
+      {/* ---------------Trending Product Section------------------ */}
+
+      <h5 class="product-category">TRENDING PRODUCTS</h5>
+
+      <section class="product"> 
+        <button class="pre-btn"><img src={arrow} alt=""/></button>
+        <button class="nxt-btn"><img src={arrow}  alt=""/></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src={product1} class="product-thumb" alt=""/>
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">simply dummy text of the printing and typesetting industry.</p>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <div>
+                    <span class="actual-price">RS 499</span><span class="price">Rs 125</span>
+                    <button type="button" class="btn btn-outline-danger offerbtn">75% OFF</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src={product2} class="product-thumb" alt=""/>
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">simply dummy text of the printing and typesetting industry.</p>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <div>
+                    <span class="actual-price">RS 499</span><span class="price">Rs 125</span>
+                    <button type="button" class="btn btn-outline-danger offerbtn">75% OFF</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src={product3} class="product-thumb" alt=""/>
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">simply dummy text of the printing and typesetting industry.</p>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <div>
+                    <span class="actual-price">RS 499</span><span class="price">Rs 125</span>
+                    <button type="button" class="btn btn-outline-danger offerbtn">75% OFF</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src={product4} class="product-thumb" alt=""/>
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">simply dummy text of the printing and typesetting industry.</p>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <div>
+                    <span class="actual-price">RS 499</span><span class="price">Rs 125</span>
+                    <button type="button" class="btn btn-outline-danger offerbtn">75% OFF</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src={product5} class="product-thumb" alt=""/>
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">simply dummy text of the printing and typesetting industry.</p>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <i class="fa-sharp fa-solid fa-star" style= {{ color: "#f0d000" }}></i>
+                    <div>
+                    <span class="actual-price">RS 499</span><span class="price">Rs 125</span>
+                    <button type="button" class="btn btn-outline-danger offerbtn">75% OFF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
             </div>
             </div>
